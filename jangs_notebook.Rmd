@@ -1,5 +1,5 @@
 ---
-title: "R Notebook"
+title: "R Notebook Kingdom 3"
 output: html_notebook
 ---
 
@@ -22,7 +22,7 @@ This is the data viz
 ```{r}
 
 simulated_patient_data %>%
- filter(start >= "1965-11-10 17:43:09" & start <= "2020-12-04 22:58:46") %>%
+ filter(start >= "1975-11-10 17:43:09" & start <= "2020-12-04 22:58:46") %>%
  
     filter(marital %in% "S" | is.na(marital)) %>%
  filter(patient_age >= 56L & patient_age <= 
@@ -37,7 +37,7 @@ simulated_patient_data %>%
 
 interactive data viz
 ```{r}
-
+# This is my comment
 p <- ggplot(data = diamonds, aes(x = cut, fill = clarity)) +
             geom_bar(position = "dodge")
 ggplotly(p)
